@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"><title>Create your portfolio - FolioUp</title></head>
+<body>
+<header class="wrap nav"><a class="logo" href="index.html">Folio<span>Up</span></a><nav><a class="link" href="portfolio.html">My portfolio</a> <a class="btn small" href="create.html">Create portfolio</a></nav></header>
+<main class="wrap builder">
+<form id="builder-form" class="panel" novalidate>
+  <h2>Your details</h2><p class="hint">Everything saves automatically in this browser.</p>
+  <fieldset><legend>About you</legend>
+    <label for="name">Full name</label><input id="name" name="name" autocomplete="name" placeholder="Amina Sule">
+    <div class="two"><div><label for="title">Title</label><input id="title" name="title" placeholder="Computer Science student"></div>
+    <div><label for="location">Location</label><input id="location" name="location" placeholder="Bamenda, Cameroon"></div></div>
+    <label for="bio">Short bio</label><textarea id="bio" name="bio" placeholder="Tell companies who you are and what you want to learn."></textarea>
+    <label for="skills">Skills</label><input id="skills" name="skills" placeholder="HTML, CSS, Python, Teamwork"><p class="hint">Separate skills with commas.</p>
+  </fieldset>
+  <fieldset><legend>Projects</legend>
+    <div class="project"><label for="p1t">Project 1 title</label><input id="p1t" name="p1t"><label for="p1d">Description</label><textarea id="p1d" name="p1d"></textarea><label for="p1l">Link</label><input id="p1l" name="p1l" placeholder="https://github.com/you/project"></div>
+    <div class="project"><label for="p2t">Project 2 title</label><input id="p2t" name="p2t"><label for="p2d">Description</label><textarea id="p2d" name="p2d"></textarea><label for="p2l">Link</label><input id="p2l" name="p2l"></div>
+    <div class="project"><label for="p3t">Project 3 title</label><input id="p3t" name="p3t"><label for="p3d">Description</label><textarea id="p3d" name="p3d"></textarea><label for="p3l">Link</label><input id="p3l" name="p3l"></div>
+  </fieldset>
+  <fieldset><legend>Contact</legend>
+    <label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email">
+    <label for="github">GitHub</label><input id="github" name="github" placeholder="https://github.com/username">
+    <label for="linkedin">LinkedIn</label><input id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/username">
+    <label for="website">Website</label><input id="website" name="website">
+  </fieldset>
+  <fieldset><legend>Colour</legend>
+    <div class="swatches" role="radiogroup" aria-label="Portfolio colour">
+      <input type="radio" name="color" id="c1" value="#2b50f0" checked><label for="c1" style="background:#2b50f0" title="Blue"></label>
+      <input type="radio" name="color" id="c2" value="#0f9d73"><label for="c2" style="background:#0f9d73" title="Green"></label>
+      <input type="radio" name="color" id="c3" value="#d6336c"><label for="c3" style="background:#d6336c" title="Pink"></label>
+      <input type="radio" name="color" id="c4" value="#7048e8"><label for="c4" style="background:#7048e8" title="Purple"></label>
+      <input type="radio" name="color" id="c5" value="#e8590c"><label for="c5" style="background:#e8590c" title="Orange"></label>
+    </div>
+  </fieldset>
+</form>
+<aside class="sticky">
+  <div class="toolbar"><button class="btn" id="copy-link" type="button">Copy share link</button><a class="btn ghost" href="portfolio.html">Open full page</a><button class="btn ghost" id="clear" type="button">Clear form</button></div>
+  <div id="preview" aria-live="polite"></div>
+  <p class="status" id="status" role="status"></p>
+</aside>
+</main>
+<script src="js/script.js"></script>
+</body></html>
